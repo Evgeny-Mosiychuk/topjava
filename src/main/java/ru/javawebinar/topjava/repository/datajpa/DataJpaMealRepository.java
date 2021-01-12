@@ -14,8 +14,8 @@ public class DataJpaMealRepository implements MealRepository {
     private final CrudMealRepository crudMealRepository;
     private final CrudUserRepository crudUserRepository;
 
-    public DataJpaMealRepository(CrudMealRepository crudRepository, CrudUserRepository crudUserRepository) {
-        this.crudMealRepository = crudRepository;
+    public DataJpaMealRepository(CrudMealRepository crudMealRepository, CrudUserRepository crudUserRepository) {
+        this.crudMealRepository = crudMealRepository;
         this.crudUserRepository = crudUserRepository;
     }
 
